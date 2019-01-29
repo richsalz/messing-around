@@ -1,5 +1,4 @@
-<img href="image5.png">
-![alt_text](images/OpenSSL-Strategic0.png "image_tooltip")
+![logo image5](image5.png)
 
 
 # OpenSSL Strategic Architecture
@@ -43,8 +42,7 @@ The existing architecture is a simple 3 level layering with the crypto layer at 
 
 
 
-<img href="image1.pmg">
-![alt_text](images/OpenSSL-Strategic1.png "image_tooltip")
+![alt_text](image1.png)
 
 
 
@@ -54,8 +52,7 @@ The components described above are packaged into two shared libraries (libcrypto
 
 
 
-<img href="image4.png">
-![alt_text](images/OpenSSL-Strategic2.png "image_tooltip")
+![alt_text](image4.png)
 
 
 
@@ -88,8 +85,7 @@ An overview of the conceptual components we expect to see in the new OpenSSL to-
 
 
 
-<img href="image2.png">
-![alt_text](images/OpenSSL-Strategic3.png "image_tooltip")
+![alt_text](image2.png)
 
 
 The components shown here are as follows:
@@ -145,8 +141,7 @@ Some loadable modules may be available from third-party providers. The libraries
 
 
 
-<img href="image3.png">
-![alt_text](images/OpenSSL-Strategic4.png "image_tooltip")
+![alt_text](image3.png)
 
 
 The containers shown here are:
