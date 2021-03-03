@@ -3,12 +3,12 @@ What this is
 
 This is a fork of [OpenSSL](www.openssl.org). In addition to the website,
 the official source distribution is at https://github.com/openssl/openssl.
-The OpenSSL `README` can be found at `README-OpenSSL.md`
+The OpenSSL `README` can be found at [README-OpenSSL.md]
 
 This fork supports an API that can be used by QUIC implementations. Quoting
 the IETF Working group [charter](https://datatracker.ietf.org/wg/quic/about/),
 QUIC is a "UDP-based, stream-multiplexing, encrypted transport protocol." If
-you don't need QUIC, you should use the official OpenSSL channels.
+you don't need QUIC, you should use the official OpenSSL distributions.
 
 This API's here are used by Microsoft's
 [MSQUIC](https://github.com/microsoft/msquic) and Google's
@@ -20,7 +20,7 @@ We do not speak for the OpenSSL project, and can only point to a
 [blog post](https://www.openssl.org/blog/blog/2020/02/17/QUIC-and-OpenSSL/) that
 provides their view.
 
-This fork can be considered a supported version of openssl/openssl/#8797
+This fork can be considered a supported version of
 [OpenSSL PR 8797](https://github.com/openssl/openssl/pull/8797).
 We will endeavor to track OpenSSL releases within a day or so, and there is an
 item below about how we'll follow their tagging. Once OpenSSL provides reasonable
@@ -50,14 +50,24 @@ any changes to that can be easily identified.
 
 What about library names?
 -------------------------
-This is currently an open issue. We don't want to conflict with the libraries
-provided by Linux Distributions, nor with OpenSSL releases. If you have any
-suggestions, please open an issue to discuss.
+Library names will be the same, but will use a different version number. The version
+numbers for the current OpenSSL libraries are `1.1` (for the 1.1.0 and 1.1.1 branches)
+and `3` (for the to-be-3.0 branch). We will be prefixing 81 (ASCII for 'Q') to
+the version numbers to generate a unique version number.
+
+```
+libcrypto.so.81.3   libcrypto.so.81.1.1   libcrypto.so.1.1   libcrypto.so.3
+libssl.so.81.3      libssl.so.81.1.1      libsslo.so.1.1     libssl.so.3
+```
+The SONAME of these libraries are all different, guaranteeing the correct library
+will be used.
 
 ...And the Executable?
 ----------------------
 We currently do not have any plans to change the name, mainly because we
 haven't made any changes there. If you see a need, please open an issue.
+
+The `openssl version` command will report that it is `+quic` enabled.
 
 ...and FIPS?
 ------------
