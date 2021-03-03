@@ -3,7 +3,7 @@ What this is
 
 This is a fork of [OpenSSL](www.openssl.org). In addition to the website,
 the official source distribution is at https://github.com/openssl/openssl.
-The OpenSSL `README` can be found at [README-OpenSSL.md]
+The OpenSSL `README` can be found at [README-OpenSSL.md](README-OpenSSL.md).
 
 This fork supports an API that can be used by QUIC implementations. Quoting
 the IETF Working group [charter](https://datatracker.ietf.org/wg/quic/about/),
@@ -85,3 +85,8 @@ done so (and we might verify with OpenSSL). We are only interested in making it
 easier and better for at least the mentioned QUIC implementations to use a variant
 of OpenSSL. If you have a pull request that changes the TLS protocol, or adds
 assembly support for a new CPU, please contribute that to OpenSSL.
+
+Who are you?
+------------
+This is a collaborative effort between [Akamai](www.akamai.com) and
+[Microsoft](www.microsoft.com). We welcome anyone to contribute!
