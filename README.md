@@ -11,7 +11,7 @@ QUIC is a "UDP-based, stream-multiplexing, encrypted transport protocol." If
 you don't need QUIC, you should use the official OpenSSL distributions.
 
 This API's here are used by Microsoft's
-[MSQUIC](https://github.com/microsoft/msquic) and Google's
+[MsQuic](https://github.com/microsoft/msquic) and Google's
 [Chromium QUIC](https://chromium.googlesource.com/chromium/src/+/master/net/quic/)
 
 We are not in competition with OpenSSL project. In fact, we informed them of
@@ -23,8 +23,8 @@ provides their view.
 This fork can be considered a supported version of
 [OpenSSL PR 8797](https://github.com/openssl/openssl/pull/8797).
 We will endeavor to track OpenSSL releases within a day or so, and there is an
-item below about how we'll follow their tagging. Once OpenSSL provides reasonable
-support for the two implementations above, we will gladly shut this project down.
+item below about how we'll follow their tagging. This fork will be maintained
+until OpenSSL officially provides reasonable support for QUIC implementations.
 
 On to the questions and answers.
 
@@ -88,5 +88,5 @@ assembly support for a new CPU, please contribute that to OpenSSL.
 
 Who are you?
 ------------
-This is a collaborative effort between [Akamai](www.akamai.com) and
-[Microsoft](www.microsoft.com). We welcome anyone to contribute!
+This is a collaborative effort between [Akamai](https://www.akamai.com) and
+[Microsoft](https://www.microsoft.com). We welcome anyone to contribute!
