@@ -1,8 +1,8 @@
 ---
 name: Report website problem
 about: Let us know if you found something wrong
-title: ''
-labels: ''
+title: Issue found about website
+labels: website
 assignees: ''
 
 ---

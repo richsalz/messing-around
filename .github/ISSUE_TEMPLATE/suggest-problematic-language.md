@@ -1,8 +1,8 @@
 ---
 name: Suggest problematic language
 about: Let us know of non-inclusive language terms
-title: ''
-labels: ''
+title: Suggested problematic terminology
+labels: terminology
 assignees: ''
 
 ---
