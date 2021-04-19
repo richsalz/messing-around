@@ -7,5 +7,15 @@ assignees: ''
 
 ---
 
-** Suggest your wording change here. **
-Please include enough context to locate where the change would go.
+**The phrasing I found was:**
+the sentence you are suggesting a change for
+
+**Which is located at:**
+Link to the page it is on, and preferably the section too.
+
+**And my suggestion is:**
+Your suggested changes.
+
+**Reason for the suggestion:**
+The reasoning behind your changes.
+
